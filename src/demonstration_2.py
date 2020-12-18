@@ -27,4 +27,17 @@ Explanation: The input array represents the integer 999. 999 + 1 = 1000.
 """
 def plus_one(digits):
     # Your code here
+    # new_digit = []
+    j = [str(i) for i in digits]
+    result = int(''.join(j))
+    sum_one = result + 1    
+    new_digit = [int(i) for i in str(sum_one)]
+    return new_digit
+    
+    
 
+# delete the commas/convert to integer
+# +1 to the array
+# separate with commas
+digits = [1,3,2]
+print(plus_one(digits))
