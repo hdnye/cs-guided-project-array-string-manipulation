@@ -35,10 +35,7 @@ def plus_one(digits):
     sum_one = result + 1    
     # convert back to list
     new_digit = [int(i) for i in str(sum_one)]
-    return new_digit
-     
+    return new_digit    
 
-digits = [1, 3, 2]
-digits = [9, 9, 9]
 print(plus_one([1, 3, 2]))
 print(plus_one([9, 9, 9]))
