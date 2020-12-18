@@ -26,8 +26,7 @@ Output: [1,0,0,0]
 Explanation: The input array represents the integer 999. 999 + 1 = 1000.
 """
 def plus_one(digits):
-    # Your code here
-    # new_digit = []
+    # Your code here    
     # convert to string 
     j = [str(i) for i in digits]
     # join stmt to remove commas & brackets, turn into integer
@@ -37,12 +36,8 @@ def plus_one(digits):
     # convert back to list
     new_digit = [int(i) for i in str(sum_one)]
     return new_digit
-    
-    
+     
 
-# delete the commas/convert to integer
-# +1 to the array
-# separate with commas, return to list form
 digits = [1, 3, 2]
 digits = [9, 9, 9]
 print(plus_one([1, 3, 2]))
